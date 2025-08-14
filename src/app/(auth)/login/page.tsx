@@ -1,6 +1,8 @@
+import LoginForm from '@/components/forms/LoginForm'
 import Typography from '@/components/typography'
 import { Slack } from 'lucide-react'
-import React from 'react'
+
+
 
 const LoginPage = () => {
   return (
@@ -12,7 +14,9 @@ const LoginPage = () => {
             </div>
             <Typography text='Sign in to your Slackzz' variant='h2' className='mb-3'/>
             <Typography text='We suggest using the email address that you use at work' variant='p' className='opacity-90 mb-7'/>
-            <div className="flex flex-col space-y-4"></div>
+            <div className="flex flex-col space-y-4">
+                <LoginForm/>
+            </div>
         </div>
     </div>
   )
